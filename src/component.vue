@@ -6,6 +6,7 @@
          v-bind="$props"
          type="tel"
          @change="change"
+         @input="update"
          v-currency="{precision, decimal, thousands}"/>
 </template>
 
@@ -153,6 +154,9 @@ export default {
   methods: {
     change (newVal) {
       this.$emit('input', this.masked ? newVal : unformat(newVal, this.precision))
+    },
+    update (newVal) {
+      this.$emit('update', this.masked ? newVal : unformat(newVal, this.precision))
     }
   }
 }
