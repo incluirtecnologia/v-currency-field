@@ -1,6 +1,6 @@
 {
   "name": "@samirph/v-currency-field",
-  "version": "1.0.8",
+  "version": "1.0.8-rc.1",
   "description": "Vue currency input/directive mask",
   "main": "dist/v-currency-field.js",
   "scripts": {
