@@ -1,6 +1,6 @@
 {
   "name": "@samirph/v-currency-field",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Vue currency input/directive mask",
   "main": "dist/v-currency-field.js",
   "scripts": {
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phiny1/v-currency-field.git"
+    "url": "git+https://github.com/samirph/v-currency-field.git"
   },
   "keywords": [
     "vue",
@@ -35,7 +35,7 @@
       "limit": "1.6 KB"
     }
   ],
-  "author": "Marcos Neves <marcos.neves@gmail.com> (https://vuejs-tips.github.io/)",
+  "author": "Marcos Neves <marcos.neves@gmail.com> (https://vuejs-tips.github.io/) with changes by Samir Haddad <samirphaddad@gmail.com> (https://github.com/samirph)",
   "license": "MIT",
   "devDependencies": {
     "babel-jest": "^21.2.0",
