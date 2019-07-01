@@ -2,6 +2,7 @@
   <input type="tel"
          :value="formattedValue"
          @change="change"
+         @input="update"
          v-money="{precision, decimal, thousands, prefix, suffix, allowBlank, min, max}"
          :class="className"
          :placeholder="placeholder"
@@ -104,6 +105,9 @@ export default {
   methods: {
     change (evt) {
       this.$emit('input', this.masked ? evt.target.value : unformat(evt.target.value, this.precision))
+    },
+    update (newVal) {
+      this.$emit('update', this.masked ? newVal : evt.target.value : unformat(evt.target.value, this.precision))
     }
   }
 }
